@@ -21,5 +21,9 @@ def updateTodo():
 def deleteTodo():
     return{"message":"todo delete success"}
 
+@app.route("/me",methods=["GET"])#...
+def me():
+    return{"name":"john doe" , "role":"admin"}
+
 if __name__ == "__main__":
     app.run(debug=True)
