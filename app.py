@@ -21,4 +21,5 @@ def updateTodo():
 def deleteTodo():
     return{"message":"todo delete success"}
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
