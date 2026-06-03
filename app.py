@@ -5,7 +5,7 @@ app = Flask(__name__)
 def home():
     return{"message":"Welcome to flask"}
 
-@app.route("/todo/create",methods=["POST"])
+@app.route("/todo/create",methods=["POST"])#...
 def createTodo():
     return{"message":"todo create success"}
 
@@ -13,11 +13,11 @@ def createTodo():
 def readTodo():
     return{"message":"todo read success"}
 
-@app.route("/todo/update",methods=["PUT"])
+@app.route("/todo/update",methods=["PUT"])#...
 def updateTodo():
     return{"message":"todo update success"}
 
-@app.route("/todo/remove",methods=["DELETE"])
+@app.route("/todo/remove",methods=["DELETE"])#...
 def deleteTodo():
     return{"message":"todo delete success"}
 
